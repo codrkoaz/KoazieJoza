@@ -24,4 +24,4 @@
 Dark Smooth Red  | ![#C26565](https://via.placeholder.com/10/C26565/000000?text=+) #C26565
 White | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF/000000?text=+) #FFFFFF
 Black  | ![#000000](https://via.placeholder.com/10/000000/000000?text=+) #000000
-Ghost White | ![#f8f8ff](https://via.placeholder.com/10/f8f8ff/000000?text=+) #f8f8ff
+Ghost White | ![#f8f8ff](https://via.placeholder.com/10/f8f8ff/000000?text=+) #F8F8FF
