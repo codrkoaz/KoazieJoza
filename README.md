@@ -28,7 +28,7 @@
    1. Generate a full static production build
   ```go
   
-  run build
+  npm run build
   
   ```
   
