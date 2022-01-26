@@ -21,7 +21,7 @@
   
   Color | Hex 
 :-------------: | :-------------:
-Content Cell  | #C26565
+Content Cell  | ![#C26565](https://via.placeholder.com/10/C26565/000000?text=+)#C26565
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 Content Cell  | Content Cell
