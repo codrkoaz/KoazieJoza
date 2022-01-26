@@ -11,16 +11,12 @@
   ## 🧰 set-up
   
   1. Install the dependencies
-  ```go
+  ```
   npm install or yarn
  ```
-  
   2. Start the development server
-  ```go
-  
+  ```
   npm run start
-  
-  
   ```
   
   ## 🧩build and run for production
