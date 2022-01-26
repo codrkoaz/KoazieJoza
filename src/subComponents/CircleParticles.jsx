@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Particles from 'react-tsparticles'
 
 
-// particle config file
 
 
 const Box = styled.div`
@@ -18,10 +17,7 @@ bottom: 0;
 
 
 const BGParticles = () => {
-  // /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-  // particlesJS.load('particles-js', 'assets/particles.json', function() {
-  //   console.log('callback - particles.js config loaded');
-  // });
+  
 
     return (
       <>

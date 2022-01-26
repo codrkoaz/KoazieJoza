@@ -77,7 +77,6 @@ const Link = styled(NavLink)`
 const GITHUB = styled(NavLink)`
 	color: inherit;
 	text-decoration: none;
-	${'' /* left: 5rem; */}
 	${Box}:hover & {
 		& > * {
 			fill: white;
