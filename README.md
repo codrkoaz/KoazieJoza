@@ -2,10 +2,20 @@
 
 <p align="center">
   This is my first iteration of <a href="koaziejoza.io" rel="nofollow">koaziejoza.io</a> built with React.js.
+</p>
 
+  
+  
+  
 
-<p align="center">
-![Screen Shot 2022-01-26 at 10 33 22 AM](https://user-images.githubusercontent.com/51058620/151194042-68f694ba-ae9f-4886-bb3d-95f3641f6389.png)
+  
+  
+  <img align="center">
+  
+  ![koaziejoza](https://user-images.githubusercontent.com/51058620/151225343-4cad76d0-f003-4245-b112-383a0109e5bc.png)
+
+  
+
 
   
   ## 🧰 set-up
