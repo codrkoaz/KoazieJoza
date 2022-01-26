@@ -1,4 +1,4 @@
-#koazie.io - v1
+# koazie.io - v1
 
 <p align="center">
   This is my first iteration of koazie.io built with React.js
