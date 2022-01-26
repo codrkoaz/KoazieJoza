@@ -11,14 +11,28 @@
   ## 🧰 set-up
   
   1. Install the dependencies
-    `<copy-buttom>npm install or yarn</copy-button>`
+  ```go
+  npm install or yarn
+ ```
+  
   2. Start the development server
-    <copy-buttom>npm run start</copy-buttom>
+  ```go
   
-  ## build and run for production
+  npm run start
+  
+  
+  ```
+  
+  ## 🧩build and run for production
+  
    1. Generate a full static production build
+  ```go
   
+  run build
   
+  ```
+  
+  ## color Codes 🎨
   Color | Hex 
 :-------------: | :-------------:
 Dark Smooth Red  | ![#C26565](https://via.placeholder.com/10/C26565/000000?text=+) #C26565
