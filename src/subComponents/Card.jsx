@@ -119,10 +119,11 @@ const Card = (prop) => {
 					Visit
 				</Link>
 				<GITHUB
-					to={{ pathname: `${demo}` }}
-					target='_blank'
-				>
-					<Github width={50} height={50} />
+					to={{ pathname: `${github}` }}
+					target='_blank'>
+					<a href={github} target='_blank' rel='noreferrer'>
+						<Github Nsv width={50} height={50} />
+					</a>
 				</GITHUB>
 			</Footer>
 		</Box>
