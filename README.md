@@ -11,7 +11,7 @@
   ## 🧰 set-up
   
   1. Install the dependencies
-    <copy-buttom>npm install or yarn</copy-button>
+    `<copy-buttom>npm install or yarn</copy-button>`
   2. Start the development server
     <copy-buttom>npm run start</copy-buttom>
   
