@@ -11,9 +11,9 @@
   ## 🧰 set-up
   
   1. Install the dependencies
-    npm install or yarn
+    <copy-buttom>npm install or yarn</copy-button>
   2. Start the development server
-    npm run start
+    <copy-buttom>npm run start</copy-buttom>
   
   ## build and run for production
    1. Generate a full static production build
