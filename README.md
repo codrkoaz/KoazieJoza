@@ -1,7 +1,8 @@
-<h1 align="center"> [koaziejoza.io]:https://koaziejoza.io - v1 </h1>
+<h1 align="center"> koaziejoza.io - v1 </h1>
 
 <p align="center">
-  This is my first iteration of koazie.io built with React.js.
+  This is my first iteration of * [koazie.io] built with React.js.
+  * https://koaziejoza.io
 
 <p align="center">
 
