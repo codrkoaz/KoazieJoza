@@ -13,8 +13,8 @@
   1. Install the dependencies
   
   
-  Color Cenetered  | Hex Centered
-------------- | -------------
+  Color | Hex 
+------------- | :-------------:
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 Content Cell  | Content Cell
