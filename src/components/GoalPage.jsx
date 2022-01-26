@@ -45,7 +45,7 @@ const GoalPage = () => {
 				<source src={korea} type='video/mp4' />
 			</video>
 
-			<BigTitles text='Goal' top='79%' left='78%' />
+			<BigTitles text='Goal' top='76%' left='72%' />
 			<SocialIcons />
 			<MusicComponent top='49%' />
 		</>
