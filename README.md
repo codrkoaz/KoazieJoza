@@ -21,7 +21,7 @@
   
   Color | Hex 
 :-------------: | :-------------:
-Content Cell  | Content Cell
+Content Cell  | #C26565
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 Content Cell  | Content Cell
