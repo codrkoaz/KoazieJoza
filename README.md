@@ -10,11 +10,13 @@
 
   
   
+
   <img align="center">
   
-  ![koaziejoza](https://user-images.githubusercontent.com/51058620/151225343-4cad76d0-f003-4245-b112-383a0109e5bc.png)
+![Screen Shot 2022-01-27 at 6 44 59 PM](https://user-images.githubusercontent.com/51058620/151462123-5c94fa94-3474-437a-8089-21a9c50e9df1.png)
 
- 
+ ![Screen Shot 2022-01-27 at 6 47 53 PM](https://user-images.githubusercontent.com/51058620/151462094-e968bdf1-1e09-480b-ac1d-b05f9325d663.png)
+
   
   ## Resources used
   <p>
