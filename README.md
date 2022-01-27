@@ -14,6 +14,18 @@
   
   ![koaziejoza](https://user-images.githubusercontent.com/51058620/151225343-4cad76d0-f003-4245-b112-383a0109e5bc.png)
 
+ 
+  
+  ## Resources used
+  <p>
+  Designed in <a href="https://www.figma.com"> Figma </a>
+  </p>
+  <p>
+  SVG Icons from <a href="https://www.fontawesome.com"> Fontawesome</a>
+  </p>
+  <p>
+  Audio: Finger swingin by See Dee
+  </p>
   
 
 
