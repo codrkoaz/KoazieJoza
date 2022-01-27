@@ -125,13 +125,13 @@ const Main = () => {
 		<MainContainer>
 			<Container>
 				<GlowLight />
-				<MusicComponent />
 				<SocialIcons />
 
 				<Center onClick={isOpen}>
 					<LogoSpot />
 				</Center>
 
+				<MusicComponent />
 				<Contact
 					target='_blank'
 					to={'mailto:koazietype@gmail.com'}
