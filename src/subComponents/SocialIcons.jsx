@@ -15,10 +15,10 @@ const Icons = styled.div`
 	flex-wrap: wrap;
 	align-items: center;
 	bottom: 3.9rem;
-	left: 96%;
+	left: 90%;
 	position: fixed;
 	z-index: 3;
-	padding: 1.23rem;
+	padding: 0.4rem;
 
 	& > *:not(last-child) {
 		margin: 5px;

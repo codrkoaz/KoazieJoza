@@ -27,7 +27,7 @@ const Main = styled.div`
 	width: 30vw;
 	height: 60vh;
 	z-index: 3;
-	line-height: 2.5;
+	line-height: 2.7;
 	font-family: 'Poppins', sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -55,7 +55,8 @@ const Description = styled.div`
 	}
 	ul,p {
 		margin-left: 2rem;
-        font-weight: '300',
+        font-weight: '300';
+		margin-top: 1rem;
 	
 	}
 `;
@@ -70,8 +71,6 @@ const MySkillsPage = () => {
 				<Main>
 					<Title
 						style={{ fontFamily: 'Anonymous Pro' }}
-						width={40}
-						height={40}
 					>
 						Frontend/Backend Developer
 					</Title>
@@ -88,7 +87,7 @@ const MySkillsPage = () => {
 					>
 						<strong>skills</strong>
 						<p>
-							HTML, CSS, Javascript, React.js, Java, mySQL.
+							HTML, CSS, Javascript, React.js, Java.
 						</p>
 					</Description>
 					<Description style={{ fontFamily: 'Anonymous Pro' }}>
@@ -145,7 +144,6 @@ const MySkillsPage = () => {
                     <ul style={{ fontWeight: '400'}}>
                             <li>Figma</li>
                             <li>Affinity Designer & Photos</li>
-                            <li>Blender</li>
 						</ul>
                     </Description>
 				</Main>
