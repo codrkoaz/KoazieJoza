@@ -5,7 +5,7 @@ import jazz from '..//assets/music/Finger swingin.mp3'
 
 const MusicBox = styled.h2`
 display: flex;
-color: ${props => props.theme.text};
+color: white;
 font-family: 'Poppins', sans-serif;
 cursor: pointer;
 position: fixed;
@@ -51,13 +51,11 @@ const MusicComponent = () => {
             <musicPlay click={click} />
             <musicPlay click={click} />
             <musicPlay click={click} />
-            <musicPlay click={click} />
-            <musicPlay click={click} />
 
             Music
 
 
-            <audio src={jazz} ref={ref} autoplay loop/>
+            <audio src={jazz} ref={ref} loop/>
 
         </MusicBox>
     )

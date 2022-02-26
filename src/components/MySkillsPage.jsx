@@ -11,12 +11,13 @@ const Box = styled.div`
 	height: 100vh;
 	display: flex;
 	justify-content: space-evenly;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	position: relative;
 	align-items: center;
 	overflow: hidden;
 	border: 10px solid black;
 	box-sizing: border-box;
+
 `;
 
 const Main = styled.div`
@@ -31,7 +32,7 @@ const Main = styled.div`
 	font-family: 'Poppins', sans-serif;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 `;
 
 const Title = styled.h3`
@@ -64,8 +65,8 @@ const Description = styled.div`
 const MySkillsPage = () => {
 	return (
 		<>
-			<SocialIcons />
 			<GlowLight />
+			<SocialIcons />
 			<MusicComponent />
 			<Box>
 				<Main>
@@ -149,7 +150,6 @@ const MySkillsPage = () => {
 				</Main>
 				<BigTitles text='SKILLS' top='73%' left='30%' />
 			</Box>
-			<SocialIcons />
 		</>
 	);
 };

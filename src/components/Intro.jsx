@@ -28,7 +28,9 @@ const Text = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	line-height: 1.6;
+	text-align: center;
+	top: 20%;
 
 	box-sizing: border-box;
 	height: 100%;

@@ -14,11 +14,16 @@ const Icons = styled.div`
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	bottom: 3.9rem;
+	bottom: 0.9rem;
 	left: 90%;
 	position: fixed;
 	z-index: 3;
 	padding: 0.4rem;
+
+	&:hover & {
+		background-color: white;
+		color: black;
+	}
 
 	& > *:not(last-child) {
 		margin: 5px;
@@ -28,65 +33,64 @@ const Icons = styled.div`
 	}
 `;
 
+const IconGroup = styled.a`
+	color: inherit;
+	text-decoration: none;
+	&:hover {
+		& > * {
+			fill: white;
+		}
+	}
+`;
+
 const SocialIcons = () => {
 	return (
 		<Icons>
-			<div>
+			<IconGroup>
 				<a
 					href='https://github.com/koazie'
-					style={{ color: 'white' }}
 					target='_blank'
 					rel='noreferrer'
 				>
-					<Github
-						width={30}
-						height={30}
-						fill='currentColor'
-					/>
+					<Github width={30} height={30} />
 				</a>
-			</div>
-			<div>
+			</IconGroup>
+			<IconGroup>
 				<a
 					href='https://instagram.com/koaziejoza'
-					style={{ color: 'white' }}
 					target='_blank'
 					rel='noreferrer'
 				>
 					<Instagram
 						width={30}
 						height={30}
-						fill='currentColor'
 					/>
 				</a>
-			</div>
-			<div>
+			</IconGroup>
+			<IconGroup>
 				<a
 					href='https://www.linkedin.com/in/jozasmith/'
-					style={{ color: 'white' }}
 					target='_blank'
 					rel='noreferrer'
 				>
 					<LinkedIn
 						width={30}
 						height={30}
-						fill='currentColor'
 					/>
 				</a>
-			</div>
-			<div>
+			</IconGroup>
+			<IconGroup>
 				<a
 					href='https://dribbble.com/jozasmith'
-					style={{ color: 'white' }}
 					target='_blank'
 					rel='noreferrer'
 				>
 					<Dribbble
 						width={30}
 						height={30}
-						fill='currentColor'
 					/>
 				</a>
-			</div>
+			</IconGroup>
 		</Icons>
 	);
 };

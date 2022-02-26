@@ -33,7 +33,7 @@ const Container = styled.div`
 `;
 
 // NavLink
-const Contact = styled(NavLink)`
+const Contact = styled.div`
 	color: ${(props) => props.theme.text};
 	position: absolute;
 	top: 2rem;
@@ -104,14 +104,19 @@ const Center = styled.button`
 const Footer = styled.div`
 	color: ${(props) => props.theme.text};
 	font-size: 13px;
-	display: flex;
+	${'' /* display: flex; */}
 	${'' /* justify-content: center; */}
-	${'' /* align-items: center; */}
-position: absolute;
-	left: 43%;
-	bottom: 3%;
-	filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.6));
-	${'' /* padding: 5rem; */}
+	${'' /* flex-direction: column; */}
+	${'' /* box-sizing: border-box; */}
+	line-height: 20px;
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, .6);
+	position: fixed;
+min-height: 100px;
+width: 100%;
+	left: 0;
+	bottom: 0;
+	top: 96%; 
 `;
 
 const Main = () => {
@@ -132,9 +137,12 @@ const Main = () => {
 				</Center>
 
 				<MusicComponent />
-				<Contact
-					target='_blank'
-					to={'mailto:koazietype@gmail.com'}
+
+				<Contact>
+				<a
+					href='mailto:koazietype@gmail.com'
+					style={{ color: 'white' }}
+					rel='noreferrer'
 				>
 					<motion.h2
 					initial={{
@@ -152,8 +160,9 @@ const Main = () => {
 						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.9 }}
 					>
-						say hi...
+							say hi...
 					</motion.h2>
+						</a>
 				</Contact>
 
 				<GOAL to='/Goal'>
@@ -260,8 +269,8 @@ const Main = () => {
 			/>
 
 			<Footer>
-				Built and designed by Joza Smith. All rights
-				reserved. ©
+				Built and designed by Joza Smith.<br></br>
+				All rights reserved. ©
 			</Footer>
 		</MainContainer>
 	);

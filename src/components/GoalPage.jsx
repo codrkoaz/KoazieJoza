@@ -6,12 +6,17 @@ import BigTitles from '../subComponents/BigTitles';
 import SocialIcons from '../subComponents/SocialIcons';
 import MusicComponent from '../subComponents/Music';
 
-const GOAL_CONTAINER = styled.h1`
+const GOAL_CONTAINER = styled.div`
 	display: flex;
-	padding: 5px;
-	justify-content: center;
-	align-items: center;
-	top: 90rem;
+	font-weight: bold;
+	align-content: center;
+	padding: 8rem;
+	font-size: 30px;
+	flex-direction: row;
+	align-items: baseline;
+	color: white;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 1);
+
 `;
 
 const GoalPage = () => {
@@ -20,7 +25,7 @@ const GoalPage = () => {
 			<GlowLightBtn />
 
 			<GOAL_CONTAINER>
-				<h3>My goal is to walk and explore South Korea.</h3>
+			My goal is to walk and explore South Korea.
 			</GOAL_CONTAINER>
 
 			{/* Shout-out Seoul Walker on Youtube for this Video
@@ -30,14 +35,15 @@ const GoalPage = () => {
 				autoPlay
 				loop
 				muted
-				controls
+				// controls
 				style={{
 					position: 'fixed',
 					width: '100%',
 					height: '100%',
 					left: '50%',
-					top: '50%',
-					objectFit: 'cover',
+				top: '50%',
+				
+					objectFit: 'fill',
 					transform: 'translate(-50%,-50%)',
 					zIndex: -1,
 				}}
@@ -45,7 +51,7 @@ const GoalPage = () => {
 				<source src={korea} type='video/mp4' />
 			</video>
 
-			<BigTitles text='Goal' top='76%' left='72%' />
+			<BigTitles text='Goals' top='79%' left='72%' />
 			<SocialIcons />
 			<MusicComponent top='49%' />
 		</>
