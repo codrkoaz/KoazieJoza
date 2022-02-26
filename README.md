@@ -1,7 +1,7 @@
 <h1 align="center"> koaziecode.io - v1 </h1>
 
 <p align="center">
-  This is my first iteration of <a href="koaziecode.io" rel="nofollow">koaziecoze.io</a> built with React.js.
+  This is my first iteration of <a href="koaziecode.io" rel="nofollow">koaziecode.io</a> built with React.js.
 </p>
 
   
