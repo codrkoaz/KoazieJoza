@@ -60,20 +60,6 @@ const Footer = styled.footer`
 	justify-content: center;
 `;
 
-const Link = styled(NavLink)`
-	background-color: black;
-	text-decoration: none;
-	color: white;
-	padding: 0.5rem calc(2rem + 2vw);
-	border-radius: 0 0 30px 30px;
-	font-size: calc(1em + 0.5vw);
-
-	${Box}:hover & {
-		background-color: white;
-		color: black;
-	}
-`;
-
 const GITHUB = styled(NavLink)`
 	color: inherit;
 	text-decoration: none;
@@ -98,8 +84,7 @@ const Item = {
 };
 
 const Card = (prop) => {
-	const { id, name, description, tags, demo, github } =
-		prop.data;
+	const { id, name, description, tags, github } = prop.data;
 
 	return (
 		<Box key={id} variants={Item}>
@@ -111,12 +96,12 @@ const Card = (prop) => {
 				})}
 			</Tags>
 			<Footer>
-
 				<GITHUB
 					to={{ pathname: `${github}` }}
-					target='_blank'>
+					target='_blank'
+				>
 					<a href={github} target='_blank' rel='noreferrer'>
-						<Github width={50} height={50}  />
+						<Github width={50} height={50} />
 					</a>
 				</GITHUB>
 			</Footer>
