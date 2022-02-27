@@ -18,27 +18,23 @@ const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
 height:100vh;
-position: absolute;
+position: relative;
 box-sizing: border-box;
 overflow: hidden;
-	border: 10px solid black;
+border: 10px solid black;
 `;
 
-// const float = keyframes`
-// 0% { transform: translateY(-10px)}
-// 50% { transform: translateY(15px) translateX(15px)}
-// 100% { transform: translateY(-10px)}
-// `
+
+
 
 const SmileJoza = styled.div`
 position: absolute;
 top: 10%;
 right: 5%;
 width: 20vw;
-${'' /* animation: ${float} 4s ease infinite; */}
 img{
     width: 100%;
-    height: auto;
+    height: 100%;
 	border: 4px solid black;
 	border-radius: 10px;
 }
@@ -47,11 +43,11 @@ img{
 const MainText = styled.div`
   border: 5px solid black;
 background: rgba(255, 255, 255, 0.76);
-border-radius: 10px;
   color: ${(props) => props.theme.textTwo};
-  padding: 2rem;
+  padding: 1rem;
+  text-align: center;
   width: 50vw;
-  height: 50vh;
+  height: 60vh;
   z-index: 3;
   line-height: 1.5;
   display: flex;
@@ -61,38 +57,11 @@ border-radius: 10px;
  backdrop-filter: blur(4px);
  
   position: absolute;
-  left: calc(3rem + 1vw);
-  top: 13rem;
+  left: calc(5rem + 5vw);
+  top: 12rem;
   font-family: 'Poppins', monospace;
-  font-style: italic;
+  ${'' /* font-style: italic; */}
 `
-
-// const MainText = styled.div`
-// border: 4px solid black;
-// border-radius: 20px;
-// color: black;
-// background: rgba(255, 255, 255, 0.9);
-// backdrop-filter: blur(50px);
-// padding: 2rem;
-// width: 32vw;
-// height: 50vh;
-// z-index: 2;
-// line-height: 1.5;
-
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// position: fixed;
-// left: calc(5rem + 5vw);
-// top: 30%;
-
-
-
-// p{
-// font-size: 20px;
-// 	font-style: italic;
-// }
-// `
 
 
 
@@ -115,19 +84,11 @@ const AboutPage = () => {
                 </SmileJoza>
 
 				<MainText>
-					I recently got my certificate in Web Development at Kenzie Academy, with a focus mostly in Frontend Development and got myself into backend development. 
-					<br /><br />
-					I'm into any sort of frontend and backend development that requires creativity and problem solving. 
-					<br /><br />
-					I also, like my fair share of 3D motion animations, logo design, and video editing. 
-					<br /><br />
-					My other areas of interest is ux design and machine learning. 
-					<br /><br />
-					On my free time I like to build mechanical keyboards, play with my dog and eat lasange.
-
-				
-
-					
+					I recently got my certificate in Web Development at Kenzie Academy, with a focus mostly in Frontend Development. 
+          I'm into any sort of development that requires me to be creative and to solve problems. I recently got myself into learning Backend development. 
+          I also, like my fair share of ux design, logo design, and video editing. 
+					My other areas of interest includes machine learning, backend development, and 3D motion animations. 
+					In my free time I like to build mechanical keyboards while listening to jazz, cook, and binge watch Anime and Kdramas.
 				</MainText>
 				
 				<BigTitles text="ABOUT" top="6%" left="5%" />

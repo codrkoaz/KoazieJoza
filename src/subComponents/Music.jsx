@@ -51,6 +51,8 @@ const MusicComponent = () => {
             <musicPlay click={click} />
             <musicPlay click={click} />
             <musicPlay click={click} />
+            <musicPlay click={click} />
+            <musicPlay click={click} />
 
             Music
 

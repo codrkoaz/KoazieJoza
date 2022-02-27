@@ -57,7 +57,7 @@ const Tag = styled.span`
 
 const Footer = styled.footer`
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 `;
 
 const Link = styled(NavLink)`
@@ -111,13 +111,7 @@ const Card = (prop) => {
 				})}
 			</Tags>
 			<Footer>
-				<Link
-					to={{ pathname: `${demo}` }}
-					target='_blank'
-					rel='noreferrer'
-				>
-					Visit
-				</Link>
+
 				<GITHUB
 					to={{ pathname: `${github}` }}
 					target='_blank'>

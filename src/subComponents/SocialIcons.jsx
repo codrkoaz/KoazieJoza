@@ -1,5 +1,5 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion'
 import {
 	Dribbble,
 	Github,
@@ -18,7 +18,8 @@ const Icons = styled.div`
 	left: 90%;
 	position: fixed;
 	z-index: 3;
-	padding: 0.4rem;
+	padding: 0.1rem;
+	
 
 	&:hover & {
 		background-color: white;
@@ -26,7 +27,7 @@ const Icons = styled.div`
 	}
 
 	& > *:not(last-child) {
-		margin: 5px;
+		margin: 0.5px 0;
 		text-decoration: none;
 		color: white;
 		filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.6));
@@ -47,6 +48,20 @@ const SocialIcons = () => {
 	return (
 		<Icons>
 			<IconGroup>
+			<motion.div
+					initial={{
+							y: 200,
+							transition: {
+								type: 'spring',
+								duration: 1.5,
+								delay: 1,
+							}
+						}}
+						animate={{
+							y: 0,
+						transition: { type: 'spring', duration: 1.2, delay: 1 }
+						}}
+            >
 				<a
 					href='https://github.com/koazie'
 					target='_blank'
@@ -54,8 +69,23 @@ const SocialIcons = () => {
 				>
 					<Github width={30} height={30} />
 				</a>
+				</motion.div>
 			</IconGroup>
 			<IconGroup>
+			<motion.div
+					initial={{
+							y: 200,
+							transition: {
+								type: 'spring',
+								duration: 1.5,
+								delay: 1,
+							}
+						}}
+						animate={{
+							y: 0,
+						transition: { type: 'spring', duration: 1.3, delay: 1 }
+						}}
+            >
 				<a
 					href='https://instagram.com/koaziejoza'
 					target='_blank'
@@ -65,9 +95,25 @@ const SocialIcons = () => {
 						width={30}
 						height={30}
 					/>
-				</a>
+					</a>
+				</motion.div>
+					
 			</IconGroup>
 			<IconGroup>
+			<motion.div
+					initial={{
+							y: 200,
+							transition: {
+								type: 'spring',
+								duration: 1.5,
+								delay: 1,
+							}
+						}}
+						animate={{
+							y: 0,
+						transition: { type: 'spring', duration: 1.4, delay: 1 }
+						}}
+            >
 				<a
 					href='https://www.linkedin.com/in/jozasmith/'
 					target='_blank'
@@ -77,9 +123,24 @@ const SocialIcons = () => {
 						width={30}
 						height={30}
 					/>
-				</a>
+					</a>
+					</motion.div>
 			</IconGroup>
 			<IconGroup>
+			<motion.div
+					initial={{
+							y: 200,
+							transition: {
+								type: 'spring',
+								duration: 1.5,
+								delay: 1,
+							}
+						}}
+						animate={{
+							y: 0,
+						transition: { type: 'spring', duration: 1.5, delay: 1 }
+						}}
+            >
 				<a
 					href='https://dribbble.com/jozasmith'
 					target='_blank'
@@ -89,7 +150,8 @@ const SocialIcons = () => {
 						width={30}
 						height={30}
 					/>
-				</a>
+					</a>
+					</motion.div>
 			</IconGroup>
 		</Icons>
 	);

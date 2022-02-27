@@ -13,7 +13,6 @@ const MainContainer = styled.div`
 	background: ${(props) => props.theme.body};
 	width: 100vw;
 	height: 100vh;
-	${'' /* overflow: hidden; */}
 	border-right: 10px solid black;
 
 	position: relative;
@@ -103,20 +102,16 @@ const Center = styled.button`
 
 const Footer = styled.div`
 	color: ${(props) => props.theme.text};
-	font-size: 13px;
-	${'' /* display: flex; */}
-	${'' /* justify-content: center; */}
-	${'' /* flex-direction: column; */}
-	${'' /* box-sizing: border-box; */}
+	font-size: 12px;
 	line-height: 20px;
 	text-align: center;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, .6);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, .8);
 	position: fixed;
 min-height: 100px;
 width: 100%;
 	left: 0;
 	bottom: 0;
-	top: 96%; 
+	top: 94.5%; 
 `;
 
 const Main = () => {
@@ -128,8 +123,8 @@ const Main = () => {
 
 	return (
 		<MainContainer>
-			<Container>
 				<GlowLight />
+			<Container>
 				<SocialIcons />
 
 				<Center onClick={isOpen}>

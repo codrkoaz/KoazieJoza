@@ -15,15 +15,14 @@ const Box = styled(motion.div)`
 	height: 40vh;
 	display: flex;
 
-	border: 10px solid white;
-	border-radius: 15px;
+	border: 5px solid white;
 	background-color: black;
 	z-index: 1;
 `;
 
 const Text = styled(motion.div)`
 	font-size: calc(0.3em + 1.5vw);
-	left: 20px !important;
+	left: 10px !important;
 	position: absolute;
 	display: flex;
 	flex-direction: column;

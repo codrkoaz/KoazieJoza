@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import SocialIcons from '../subComponents/SocialIcons';
 import BigTitles from '../subComponents/BigTitles';
 import MusicComponent from '../subComponents/Music';
+import CircleParticles from '../subComponents/ColorParticles'
 
 const Box = styled.div`
 	background-color: ${(props) => props.theme.body};
@@ -11,28 +12,26 @@ const Box = styled.div`
 	height: 100vh;
 	display: flex;
 	justify-content: space-evenly;
-	flex-wrap: nowrap;
 	position: relative;
 	align-items: center;
-	overflow: hidden;
 	border: 10px solid black;
-	box-sizing: border-box;
+box-sizing: border-box;
 
 `;
 
 const Main = styled.div`
 	border: 7px solid black;
 	color: black;
-	background-color: rgba(255, 255, 255, 0.85);
-	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.79);
+	padding: 2rem;
 	width: 30vw;
 	height: 60vh;
-	z-index: 3;
-	line-height: 2.7;
+	z-index: 2;
+	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 `;
 
 const Title = styled.h3`
@@ -41,12 +40,16 @@ const Title = styled.h3`
 	align-items: center;
 	font-size: calc(1em + 1vw);
 	font-weight: bold;
+
+	&*:first-child{
+		margin-right: 1rem;
+	}
 `;
 
 const Description = styled.div`
 	color: black;
 	font-weight: bold;
-	font-size: calc(0.3em + 1vw);
+	font-size: calc(0.6em + 1vw);
 	padding: 0.5rem 0;
 
 	strong {
@@ -57,20 +60,22 @@ const Description = styled.div`
 	ul,p {
 		margin-left: 2rem;
         font-weight: '300';
-		margin-top: 1rem;
+		margin-top: 2rem;
 	
 	}
 `;
 
 const MySkillsPage = () => {
 	return (
-		<>
-			<GlowLight />
-			<SocialIcons />
-			<MusicComponent />
+		
 			<Box>
+			<GlowLight />
+			<SocialIcons style={{ top: '10%' }}/>
+			<MusicComponent />
+			<CircleParticles />
 				<Main>
-					<Title
+					<Title width={40}
+						height={40}
 						style={{ fontFamily: 'Anonymous Pro' }}
 					>
 						Frontend/Backend Developer
@@ -88,13 +93,13 @@ const MySkillsPage = () => {
 					>
 						<strong>skills</strong>
 						<p>
-							HTML, CSS, Javascript, React.js, Java.
+							HTML, CSS, Javascript, React.js, Java, Firebase(Learning).
 						</p>
 					</Description>
 					<Description style={{ fontFamily: 'Anonymous Pro' }}>
 						<strong>tools</strong>
 						<p>
-							VScode, Github, IntelliJ IDEA, Git, Codepen
+							VScode, Github, IntelliJ IDEA, Git.
 						</p>
 					</Description>
 				</Main>
@@ -120,8 +125,7 @@ const MySkillsPage = () => {
 					<Description>
 						<strong
 							style={{
-								fontFamily: 'Poppins',
-								fontWeight: 'bold',
+								fontFamily: 'Poppins'
 							}}
 						>
 							I like to design
@@ -140,17 +144,15 @@ const MySkillsPage = () => {
 					>
 						tools
                         </strong>
-                    </Description>
-                    <Description>
                     <ul style={{ fontWeight: '400'}}>
                             <li>Figma</li>
                             <li>Affinity Designer & Photos</li>
 						</ul>
                     </Description>
 				</Main>
-				<BigTitles text='SKILLS' top='73%' left='30%' />
+				<BigTitles text='SKILLS' top='73%' left='23%' />
 			</Box>
-		</>
+
 	);
 };
 
