@@ -25,13 +25,14 @@ const Main = styled.div`
 	background-color: rgba(255, 255, 255, 0.79);
 	padding: 2rem;
 	width: 30vw;
-	height: 60vh;
+	height: 50vh;
 	z-index: 2;
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
+position: relative;
 `;
 
 const Title = styled.h3`
@@ -49,7 +50,7 @@ const Title = styled.h3`
 const Description = styled.div`
 	color: black;
 	font-weight: bold;
-	font-size: calc(0.6em + 1vw);
+	font-size: calc(0.4em + 1vw);
 	padding: 0.5rem 0;
 
 	strong {
@@ -58,7 +59,7 @@ const Description = styled.div`
 		font-weight: bold;
 	}
 	ul,p {
-		margin-left: 2rem;
+		margin-left: 1rem;
         font-weight: '300';
 		margin-top: 2rem;
 	
@@ -70,23 +71,20 @@ const MySkillsPage = () => {
 		
 			<Box>
 			<GlowLight />
-			<SocialIcons style={{ top: '10%' }}/>
+			<SocialIcons style={{ top: '10%', flexDirection: 'column' }}/>
 			<MusicComponent />
 			<CircleParticles />
 				<Main>
 					<Title width={40}
 						height={40}
-						style={{ fontFamily: 'Anonymous Pro' }}
+					style={{ fontFamily: 'Anonymous Pro' }}
 					>
 						Frontend/Backend Developer
 					</Title>
-
 					<Description
 						style={{ fontFamily: 'Anonymous Pro' }}
 					>
-						I value business or brand for which I'm
-						creating, thus I enjoy bringing new ideas to
-						life.
+						I love creating ideas that can benefit the companies I work for.
 					</Description>
 					<Description
 						style={{ fontFamily: 'Anonymous Pro' }}
@@ -100,7 +98,8 @@ const MySkillsPage = () => {
 						<strong>tools</strong>
 						<p>
 							VScode, Github, IntelliJ IDEA, Git.
-						</p>
+					</p>
+					<br></br>
 					</Description>
 				</Main>
 				<Main>
@@ -111,7 +110,6 @@ const MySkillsPage = () => {
 					>
 						Designer
 					</Title>
-
 					<Description
 						style={{
 							fontFamily: 'Poppins',
@@ -121,6 +119,7 @@ const MySkillsPage = () => {
 						I love to create designs which speaks without
 						saying anything, keep it clean, simple and
 						minimal.
+					<br></br>
 					</Description>
 					<Description>
 						<strong
@@ -133,7 +132,7 @@ const MySkillsPage = () => {
 						<ul style={{ fontWeight: '400'}}>
                             <li>Web Design</li>
                             <li>Mobile Apps</li>
-						</ul>
+					</ul>
                     </Description>
                     <Description>
 					<strong
@@ -147,7 +146,8 @@ const MySkillsPage = () => {
                     <ul style={{ fontWeight: '400'}}>
                             <li>Figma</li>
                             <li>Affinity Designer & Photos</li>
-						</ul>
+					</ul>
+					<br></br>
                     </Description>
 				</Main>
 				<BigTitles text='SKILLS' top='73%' left='23%' />

@@ -111,7 +111,7 @@ min-height: 100px;
 width: 100%;
 	left: 0;
 	bottom: 0;
-	top: 94.5%; 
+	top: 96.5%; 
 `;
 
 const Main = () => {
