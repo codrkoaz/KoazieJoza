@@ -71,7 +71,7 @@ const MySkillsPage = () => {
 		
 			<Box>
 			<GlowLight />
-			<SocialIcons style={{ top: '10%', flexDirection: 'column' }}/>
+			<SocialIcons style={{ top: '10%'}}/>
 			<MusicComponent />
 			<CircleParticles />
 				<Main>
