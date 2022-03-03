@@ -27,19 +27,18 @@ const Text = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	line-height: 1.6;
+	line-height: 1.5;
 	text-align: center;
 	top: 20%;
 
 	box-sizing: border-box;
-	height: 50%;
+	height: 100%;
 	width: 100%;
 
 	& > *:last-child {
 		color: rgba(255, 255, 255, 0.9);
-		font-size: calc(0.2rem + 1.5vw);
-		font-weight: 300;
-		font-size: 18px;
+		font-size: calc(0.6em + 1vw);
+		font-weight: 500;
 	}
 
 	p {
