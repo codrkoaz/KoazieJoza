@@ -17,7 +17,7 @@ const Icons = styled.div`
 	left: 90%;
 	position: fixed;
 	z-index: 3;
-	padding: 0.1rem;
+	padding: 1.7rem;
 	
 
 	&:hover & {
