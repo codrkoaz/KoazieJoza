@@ -22,7 +22,7 @@ const Box = styled(motion.div)`
 
 const Text = styled(motion.div)`
 	font-size: calc(0.3em + 1.3vw);
-	left: 10px !important;
+	left: 0.1rem !important;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -39,7 +39,7 @@ const Text = styled(motion.div)`
 		color: rgba(255, 255, 255, 0.9);
 		font-size: calc(0.2rem + 1.5vw);
 		font-weight: 300;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	p {

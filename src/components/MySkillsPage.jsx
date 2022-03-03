@@ -59,7 +59,7 @@ const Description = styled.div`
 		font-weight: bold;
 	}
 	ul,p {
-		margin-left: 1rem;
+		margin-left: 1.5rem;
         font-weight: '300';
 		margin-top: 2rem;
 	
