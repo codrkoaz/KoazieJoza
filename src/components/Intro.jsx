@@ -49,7 +49,7 @@ const Text = styled(motion.div)`
 	}
 	strong {
 		font-weight: bold;
-		color: white;
+		color: white
 		font-size: 1.4rem;
 	}
 `;
