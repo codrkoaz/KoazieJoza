@@ -29,14 +29,14 @@ const Text = styled(motion.div)`
 	align-items: center;
 	line-height: 1.6;
 	text-align: center;
-	top: .3rem;
+	bottom: 2rem;
 	box-sizing: border-box;
 	height: 100%;
 	width: 100%;
 
 	& > *:last-child {
 		color: rgba(255, 255, 255, 0.9);
-		${'' /* font-size: calc(0.1em + 1vw); */}
+		font-size: calc(0.1em + 0.9vw);
 		font-weight: 500;
 	}
 
@@ -47,11 +47,7 @@ const Text = styled(motion.div)`
 		bottom: 1rem;
 		
 	}
-	strong {
-		font-weight: bold;
-		color: white;
-		font-size: 1.4rem;
-	}
+	
 `;
 
 const CloseBox = styled(motion.div)`
@@ -101,23 +97,22 @@ const Intro = ({ showOpen, setShowOpen }) => {
 							<h4
 								style={{
 									fontFamily: 'Poppins',
-									// fontWeight: '500',
+									fontWeight: 'bold',
 									color: 'white',
 								}}
 							>
 								I create stuff I like sometimes.
 							</h4>
-							{/* <h6> */}
-							<p>
+							<p style={{ fontWeight: '400'}}>
 								I'm a Frontend Web Developer and a Digital
 								Artist based in Grand Rapids.
 								I have a profound interest in
 								full-stack development, UX Design, Mobile
 								development and machine learning.
 							</p>
-							{/* </h6> */}
 						</Text>
 					</motion.div>
+
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
