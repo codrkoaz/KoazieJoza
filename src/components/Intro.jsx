@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 import resumeFile from '../assets/resume/Joseph Smith Resume.pdf';
 
 const Box = styled(motion.div)`
-	position: fixed;
-	left: 50%;
+	position: absolute;
+	left: 51%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	padding: 2rem;
+	padding: 4.3rem;
 
-	width: 30vw;
+	width: 25vw;
 	height: 40vh;
 	display: flex;
 
@@ -21,42 +21,42 @@ const Box = styled(motion.div)`
 `;
 
 const Text = styled(motion.div)`
-	font-size: calc(0.3em + 1.3vw);
-	left: 0.1rem !important;
-	position: absolute;
+	font-size: calc(0.3em + 1.0vw);
+	left: 0.3rem;
+	position: relative; 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	line-height: 1.5;
+	line-height: 1.6;
 	text-align: center;
-	top: 20%;
-
+	top: .3rem;
 	box-sizing: border-box;
 	height: 100%;
 	width: 100%;
 
 	& > *:last-child {
 		color: rgba(255, 255, 255, 0.9);
-		font-size: calc(0.6em + 1vw);
+		${'' /* font-size: calc(0.1em + 1vw); */}
 		font-weight: 500;
 	}
 
 	p {
-		padding: 2rem;
+		padding: 1rem;
 		position: relative;
-		right: 1%;
-		bottom: 5%;
+		right: 2%;
+		bottom: 1rem;
+		
 	}
 	strong {
 		font-weight: bold;
-		color: white
+		color: white;
 		font-size: 1.4rem;
 	}
 `;
 
 const CloseBox = styled(motion.div)`
 	color: white;
-	position: absolute;
+	position: fixed;
 	display: flex;
 	cursor: pointer;
 	left: 20px;
@@ -70,7 +70,7 @@ const Intro = ({ showOpen, setShowOpen }) => {
 			{showOpen ? (
 				<Box
 					initial={{ height: 0, opacity: 1 }}
-					animate={{ height: '40vh' }}
+					animate={{ height: '35vh' }}
 					transition={{
 						type: 'spring',
 						duration: 1,
@@ -83,7 +83,7 @@ const Intro = ({ showOpen, setShowOpen }) => {
 						transition={{ duration: 0.5, delay: 0.5 }}
 					>
 						<Text>
-							<h1>hi,</h1>
+							<h2>hi,</h2>
 							<h2>
 								<a
 									href={resumeFile}
@@ -96,25 +96,26 @@ const Intro = ({ showOpen, setShowOpen }) => {
 									}}
 								>
 									Joza
-								</a>{' '}
-								here,
-							</h2>{' '}
-							<h3
+								</a> here,
+							</h2>
+							<h4
 								style={{
 									fontFamily: 'Poppins',
-									fontWeight: '500',
+									// fontWeight: '500',
 									color: 'white',
 								}}
 							>
 								I create stuff I like sometimes.
-							</h3>
+							</h4>
+							{/* <h6> */}
 							<p>
 								I'm a Frontend Web Developer and a Digital
 								Artist based in Grand Rapids.
-								<br></br>I have a profound interest in
+								I have a profound interest in
 								full-stack development, UX Design, Mobile
 								development and machine learning.
 							</p>
+							{/* </h6> */}
 						</Text>
 					</motion.div>
 					<motion.div
