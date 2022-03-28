@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CloseBoxBtn from './AllSVGS';
 import { motion } from 'framer-motion';
-import resumeFile from '../assets/resume/Joseph Smith Resume.pdf';
+import resumeFile from '../assets/resume/JosephSmithResume.pdf';
 
 const Box = styled(motion.div)`
 	position: absolute;
@@ -21,9 +21,9 @@ const Box = styled(motion.div)`
 `;
 
 const Text = styled(motion.div)`
-	font-size: calc(0.3em + 1.0vw);
+	font-size: calc(0.3em + 1vw);
 	left: 0.3rem;
-	position: relative; 
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -45,9 +45,7 @@ const Text = styled(motion.div)`
 		position: relative;
 		right: 2%;
 		bottom: 1rem;
-		
 	}
-	
 `;
 
 const CloseBox = styled(motion.div)`
@@ -92,7 +90,8 @@ const Intro = ({ showOpen, setShowOpen }) => {
 									}}
 								>
 									Joza
-								</a> here,
+								</a>{' '}
+								here,
 							</h2>
 							<h4
 								style={{
@@ -103,12 +102,12 @@ const Intro = ({ showOpen, setShowOpen }) => {
 							>
 								I create stuff I like sometimes.
 							</h4>
-							<p style={{ fontWeight: '400'}}>
+							<p style={{ fontWeight: '400' }}>
 								I'm a Frontend Web Developer and a Digital
-								Artist based in Grand Rapids.
-								I have a profound interest in
-								full-stack development, UX Design, Mobile
-								development and machine learning.
+								Artist based in Grand Rapids. I have a
+								profound interest in full-stack development,
+								UX Design, Mobile development and machine
+								learning.
 							</p>
 						</Text>
 					</motion.div>
